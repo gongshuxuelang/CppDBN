@@ -47,7 +47,7 @@ void RTF::Reverse_transform_init(pMAT pMatrix,std::string str)
 }
 void RTF::Reverse_transForm_mkdir_file()
 {
-    DIR = "./RTF_DATE/" + ref_str_signal +"/s";
+    DIR = "../RTF_DATE/" + ref_str_signal +"/s";
     std::string FILE_NAME = boost::lexical_cast<std::string>(file_m);
     DIR = DIR + FILE_NAME;
     DIR = "mkdir -p " + DIR;
@@ -59,7 +59,7 @@ void RTF::Reverse_transForm_mkdir_file()
 }  
 void RTF::Reverse_transForm_mkdir_txt(int n)
 {
-    DIR = "./RTF_DATE/"+ ref_str_signal +"/s";
+    DIR = "../RTF_DATE/"+ ref_str_signal +"/s";
     std::string FILE_NAME = boost::lexical_cast<std::string>(file_m);
     std::string  num= boost::lexical_cast<std::string>(file_n);
     std::string  NEMBER_NAME= boost::lexical_cast<std::string>(n);

@@ -15,7 +15,7 @@ bool RWDATE_REF::ReadDate_ref() //读数据
     pRWdate_ref = new REF; //申请原始数据内存；
     pRWdate_ref -> REF_date = std::vector<std::vector<double> >(power(2,DBN_N), std::vector<double>(data_line));//c初始化内存大小   
     
-    std::string file_temporary  = "./TF_DATE/s";//文件目录用来区分读取EEG和label的，EEG为s，
+    std::string file_temporary  = "../TF_DATE/s";//文件目录用来区分读取EEG和label的，EEG为s，
    
     std::string A;              //这个是循环的得出的字符串
     std::string B;              //这个是循环的得出的字符串

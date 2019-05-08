@@ -12,8 +12,8 @@ bool rwDate::ReadDate()
     pRWdate = new RWD; //申请原始数据内存；
     pRWdate -> Raw_Data = std::vector<std::vector<double> >(data_row, std::vector<double>(data_line));//c初始化内存大小   
     
-    std::string file_directory  = "./date/EEG/s";//文件目录用来区分读取EEG和label的，EEG为s，label为SL
-    std::string file_directory1 = "./date/label/SL";
+    std::string file_directory  = "../date/EEG/s";//文件目录用来区分读取EEG和label的，EEG为s，label为SL
+    std::string file_directory1 = "../date/label/SL";
     std::string file_temporary;//  这个是一个文件夹变量
     std::string A;              //这个是循环的得出的字符串
     std::string B;              //这个是循环的得出的字符串
