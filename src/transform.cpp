@@ -15,7 +15,7 @@ TF::~TF()
 }
 void TF::TransForm_mkdir_file()
 {
-    DIR = "./TF_DATE/s";
+    DIR = "../TF_DATE/s";
     std::string FILE_NAME = boost::lexical_cast<std::string>(file_m);
     DIR = DIR + FILE_NAME;
     DIR = "mkdir -p " + DIR;
@@ -26,7 +26,7 @@ void TF::TransForm_mkdir_file()
 }  
 void TF::TransForm_mkdir_txt(int n)
 {
-    DIR = "./TF_DATE/s";
+    DIR = "../TF_DATE/s";
     std::string FILE_NAME = boost::lexical_cast<std::string>(file_m);
     std::string  num= boost::lexical_cast<std::string>(file_n);
     std::string  NEMBER_NAME= boost::lexical_cast<std::string>(n);
