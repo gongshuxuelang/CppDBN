@@ -1,7 +1,8 @@
 #include "head.h"
 
 int main()
-{    
+{
+        
     boost::progress_timer t;  //计算程序运行时间
     pDEC dec;//用于接收分解指针只传递一个数据大小
     
